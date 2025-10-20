@@ -1,0 +1,212 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Inter;;
+}
+body {
+    background-color: white;
+    padding: 50px 200px;
+}
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 29px;
+}
+nav > img {
+    width: 40px;
+}
+nav > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+}
+nav > ul > li a {
+    color: hsl(236, 13%, 42%);
+    font-size: 13px;
+    font-family: Inter;
+    text-decoration: none;
+}
+li a:hover {
+    color: hsl(5, 85%, 63%);
+    pointer-events: none;
+}
+article {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.cont {
+    margin-right: 20px;
+}
+.cont-two {
+    padding: 15px;
+    color: white;
+    background-color: hsl(240, 100%, 5%);
+}
+.cont-two h2 {
+    color: hsl(35, 77%, 62%);
+    font-family: Inter;
+    margin-bottom: 15px;
+}
+.cont-two h3 {
+    font-family: Inter;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.cont-two h3:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+.cont-two p {
+    font-family: Inter;
+    color: hsl(233, 8%, 79%);
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.cont-two div {
+    height: 1px;
+    width: 100%;
+    background-color: hsl(233, 8%, 79%);
+    margin-bottom: 20px;
+}
+.section-one {
+    background-image: url(./assets/images/image-web-3-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 550px;
+    height: 200px;
+    margin-bottom: 32px;
+}
+.section-two {
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+}
+.section-two div:nth-child(1) {
+    width: 265px;
+    margin-right: 20px;
+}
+.section-two div:nth-child(1) h1 {
+    font-family: Inter;
+    font-size: 38px;
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+.section-two div:nth-child(2) {
+    width: 265px;
+}
+.section-two div:nth-child(2) p {
+    font-family: Inter;
+    color: hsl(236, 13%, 42%);
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 18px;
+}
+.section-two div:nth-child(2) button {
+    background-color: hsl(5, 85%, 63%);
+    outline: none;
+    border: none;
+    padding: 7px 15px;
+    font-family: Inter;
+}
+.section-two div:nth-child(2) button:hover {
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    cursor: pointer;
+}
+.foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.foot div img {
+    width: 60px;
+    float: left;
+    margin-right: 10px;
+}
+.foot div h2 {
+    font-family: Inter;
+    font-size: 17px;
+    color: hsl(5, 85%, 63%);
+    margin-bottom: 7px;
+}
+.foot div h3 {
+    font-family: Inter;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+.foot div h3:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.foot div p {
+    font-family: Inter;
+    font-size: 12px;
+    color: hsl(236, 13%, 42%);
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 30px 15px;
+    }
+    nav ul {
+        width: 200px;
+    }
+    nav > ul > li a{
+        font-size: 10px;
+    }
+    article {
+        display: block;
+    }
+    .cont {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .section-one {
+        width: 100%;
+    }
+    .section-two {
+        display: block;
+        width: 100%;
+    }
+    .section-two div:nth-child(1) {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .section-two div:nth-child(1) h1 {
+        font-size: 43px;
+    }
+    .foot {
+        display: flex;
+        flex-direction: column;
+    }
+    .foot div {
+        margin-bottom: 30px;
+    }
+    .foot div img {
+    width: 100px;
+    float: left;
+    margin-right: 10px;
+    }
+    .foot div h2 {
+    font-family: Inter;
+    font-size: 30px;
+    color: hsl(5, 85%, 63%);
+    margin-bottom: 7px;
+    }
+    .foot div h3 {
+    font-family: Inter;
+    font-size: 20px;
+    margin-bottom: 7px;
+    }
+    .foot div p {
+    font-family: Inter;
+    font-size: 18px;
+    color: hsl(236, 13%, 42%);
+    }
+}
